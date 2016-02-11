@@ -14,10 +14,10 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon.png">
 </head>
 <body>
-
-    <header>
-        <div class="medium-6 column logo"></div>
-        <nav class="medium-6 column">
+   <div data-sticky-container>
+    <header style="width:100%; z-index:999999;" class="sticky" data-sticky data-options="marginTop:0;" >
+        <div class="medium-6 column logo title-bar-left"></div>
+        <nav class="medium-6 column title-bar-right">
             <ul class="dropdown menu" data-dropdown-menu>
                 <li><a class="" href="">HOME</a></li>
                 <li><a class="" href="">ABOUT</a></li>
@@ -33,7 +33,7 @@
                 <hr/>
             </ul>
         </nav>
-    </header><!--Header end-->
+    </header></div><!--Header end-->
     
     <section class="banner-home">
     </section><!--Banner end-->
@@ -49,8 +49,11 @@
             
         <div class="entry-photo"></div>
         <h3 class="entry-title">Un día normal en la oficina</h3>
+        <div class="wp-label">Work By Andreina Chirinos Aug 5,2015</div>
         <p>Estemos claros, el reto m├ís intimidante del primer trabajo es laborar con la inexperiencia y el &#8220;Dios m├¡o, ┬┐qu├® hago?&#8221; en la cabeza. Una amiga empez├│ a trabajar ayer en una Agencia, inspir├índome en ella y recordando lo que sent├¡ cuando inici├® en @mixdardo, pens├® en un par de cosas ...</p>
+        <a href="" class="read-more-button">Read more></a>
         </div>
+        
         <div class="recent">
             <div class="top-separator"></div>
             <h4>RECENT</h4>
@@ -60,7 +63,10 @@
                 <li class="column" data-equalizer-watch><a href="#"><img src="img/grid/2.jpg." alt=""></a></li>
                 <li class="column" data-equalizer-watch><a href="#"><img src="img/grid/3.jpg" alt=""></a></li>
                 <li class="column" data-equalizer-watch><a href="#"><img src="img/grid/5.jpg" alt=""></a></li>
+                <li class="column" data-equalizer-watch><a href="#"><img src="img/grid/5.jpg" alt=""></a></li>
+                <li class="column" data-equalizer-watch><a href="#"><img src="img/grid/5.jpg" alt=""></a></li>
             </ul>
+            <a href="#" class="load-more-button">Load More</a>
         </div>
     </section><!--Main end-->
     
@@ -70,6 +76,7 @@
             <div class="separator"></div>
             <div class="about-photo"></div>
             <p>Soy Andreina Chirinos. Amo escribir, por eso lo hago. Estudiante, creativa y todo el tiempo bailarina.</p>
+            <a href="" class="read-more-button"><span class="text-button">Read More></span></a>
         </div><!--About end-->
         <div class="social">
             <div class="top-separator"></div>
@@ -81,9 +88,13 @@
         </div><!--Social network end-->
         <div class="newsletter">
             <div class="top-separator"></div>
-                <form action="post">
+                <form class="row collapse" action="post">
+                   <div class="medium-8 column">
                     <input type="email" name="email" placeholder="Email adress...">
+                    </div>
+                    <div class="medium-4 column">
                     <button class="button" type="submit" form="newsletter" value="Submit">submit</button>
+                    </div>
                 </form>
             <div class="separator"></div>
         </div><!--Newsletter end-->

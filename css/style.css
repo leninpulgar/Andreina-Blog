@@ -31,7 +31,7 @@ nav{
 }
 
 ul.submenu.is-dropdown-submenu.first-sub.vertical{
-    background-color:rgba(184,221,214,0.9);
+    background-color:rgba(248,202,204,1);
     border:0;
 }
 
@@ -86,7 +86,13 @@ TRENDING
 .trending{
     color: #999999;
     font-family: 'Lato';
+    margin-bottom: 2.5rem;
     
+}
+
+.entry-title{
+    margin-top: 1rem;
+    font-weight: 400;
 }
 
 .entry-photo{
@@ -103,10 +109,25 @@ RECENT
     margin-bottom: 1rem;
 }
 
+a.load-more-button{
+    display:block;
+    width: 6rem;
+    height: 2.5rem;
+    font: 1rem/2.5rem 'Lato';
+    text-align: center;
+    background-color:rgb(248,202,204);
+    color:#FFF;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+}
+
 /****
 ASIDE
 ****/
 /*ABOUT*/
+.about{
+    margin-bottom: 1rem;
+}
 .about-photo{
     background: url(../img/foto-about-home.jpg) no-repeat 100%;
     -webkit-background-size: cover;
@@ -116,11 +137,74 @@ ASIDE
     min-height: 20.31rem;
 }
 
+a.read-more-button{
+    display: block;
+    width: 7rem;
+    height: 1.5rem;
+    background-color: #b9ddd6;
+    text-align: center;
+    color:#FFF;
+    vertical-align: middle;
+    font: 1rem/1.5rem 'Lato';
+}
+
+a.read-more-button:hover{
+    background-color: rgb(255,102,102);
+}
 /*SOCIAL NETWORKS*/
+
+.social .top-separator{
+    margin-bottom:.9rem;
+}
+
+.snf{
+    display: inline-block;
+    width:30px;
+    height: 30px;
+    background: url(../img/icons/icono%20facebook-01.svg) no-repeat center;
+}
+
+.sni{
+    display: inline-block;
+    width:30px;
+    height: 30px;
+    background: url(../img/icons/icono%20instagram-02.svg) no-repeat center;
+}
+
+.snt{
+    display: inline-block;
+    width:30px;
+    height: 30px;
+    background: url(../img/icons/icono%20twitter-03.svg) no-repeat center;
+}
 
 /*NEWSLETTER*/
 .newsletter form {
-    padding: .5rem;
+    padding-top: .9rem;
+}
+
+.newsletter form input{
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #a0a0a0;
+    border-radius: 0;
+    background-color: rgba(255,255,255,0);
+    height: 2.5rem;
+}
+
+.newsletter form button{
+    display: inline-block;
+    width: 112px;
+    background-color: #a0a0a0;
+    font-family: 'Lato';
+    font-weight: 300;
+    border-radius: 0;
+    height: 2.5rem;
+}
+
+.newsletter form button:hover{
+    background-color: rgb(255,102,102);
 }
 
 /******
@@ -139,7 +223,7 @@ footer a{
 }
 
 .copyright p{
-    margin-top: 3.3rem;
+    margin-top: 3.8rem;
 }
 .copyright{
     height: 100px;
@@ -176,7 +260,9 @@ footer a{
 
 .redesf li{
     display: inline-block;
-    padding: .3rem;
+    padding-top: 1rem;
+    padding-right: .3rem;
+    padding-left: .3rem;
 }
 
 /*******
@@ -202,12 +288,13 @@ GENERALS
 
 .container h4{
     font-size:1.2rem;
+    font-weight: 300;
 }
 
 .container p{
     color: #999999;
     font-family: 'Lato';
-    padding:.5rem;
+    
     text-align: justify;
 }
 
