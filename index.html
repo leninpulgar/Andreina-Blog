@@ -15,11 +15,12 @@
 </head>
 <body>
    <div data-sticky-container>
-    <header style="width:100%; z-index:999999;" class="sticky" data-sticky data-options="marginTop:0;" >
+    <header style="width:100%; z-index:999999;" class="sticky is-stuck" data-sticky data-sticky-on="small" data-options="marginTop:0;checkEvery:0;" data-anchor="siteContainer">
+       <div class="title-bar">
         <div class="medium-6 column logo title-bar-left"></div>
         <nav class="medium-6 column title-bar-right">
-            <ul class="dropdown menu" data-dropdown-menu>
-                <li><a class="" href="">HOME</a></li>
+            <ul id="menu lava-wrap" class="dropdown menu" data-dropdown-menu>
+                <li><a class="active" href="">HOME</a></li>
                 <li><a class="" href="">ABOUT</a></li>
                 <li><a class="" href="">WORK</a>
                         <ul class="">
@@ -30,9 +31,10 @@
                 <li><a href="">DIARY</a></li>
                 <li><a href="">INSPIRATION</a></li>
                 <li><a href="">PRESS</a></li>
-                <hr/>
+                
             </ul>
         </nav>
+        </div>
     </header></div><!--Header end-->
     
     <section class="banner-home">
@@ -78,21 +80,23 @@
             <p>Soy Andreina Chirinos. Amo escribir, por eso lo hago. Estudiante, creativa y todo el tiempo bailarina.</p>
             <a href="" class="read-more-button"><span class="text-button">Read More></span></a>
         </div><!--About end-->
-        <div class="social">
+        <div class="social row">
             <div class="top-separator"></div>
-                <p class="socialaside"><strong>SOCIAL</strong> NETWORKS 
+                <p class="socialaside"><strong>SOCIAL</strong> NETWORKS</p>
+                <div class="social-holder">
                 <a href="" class="snf"><span class="invisible">facebook</span></a>
                 <a href="" class="sni"><span class="invisible">instagram</span></a>
-                <a href="" class="snt"><span class="invisible">twitter</span></a></p>
+                <a href="" class="snt"><span class="invisible">twitter</span></a>
+                </div>
             <div class="top-separator"></div>
         </div><!--Social network end-->
-        <div class="newsletter">
+        <div class="newsletter row">
             <div class="top-separator"></div>
                 <form class="row collapse" action="post">
-                   <div class="medium-8 column">
+                   <div class="small-8 medium-8 column newsinput">
                     <input type="email" name="email" placeholder="Email adress...">
                     </div>
-                    <div class="medium-4 column">
+                    <div class="small-4 medium-4 column submit">
                     <button class="button" type="submit" form="newsletter" value="Submit">submit</button>
                     </div>
                 </form>
@@ -124,6 +128,7 @@
     </footer>
 
 <!--SCRIPTS-->
+<script src="js/lava-lamp.js"></script>
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/foundation.js"></script>
 <script src="js/vendor/what-input.min.js"></script>
