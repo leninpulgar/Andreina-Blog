@@ -1,15 +1,17 @@
+// DOM Ready
 $(function() {
 
-    var $el, leftPos, newWidth;  
+    var $el, leftPos, newWidth;
+    
     /*
         EXAMPLE ONE
     */
     
     /* Add Magic Line markup via JavaScript, because it ain't gonna work without */
-    $("#lava-wrap").append("<li id='magic-line'></li>");
+    $("#menu").append("<li class='magic-line'></li>");
     
     /* Cache it */
-    var $magicLine = $("#magic-line");
+    var $magicLine = $(".magic-line");
     
     $magicLine
         .width($(".active").width())
@@ -17,7 +19,7 @@ $(function() {
         .data("origLeft", $magicLine.position().left)
         .data("origWidth", $magicLine.width());
         
-    $("#lava-wrap li").find("a").hover(function() {
+    $("#menu li").find("a").hover(function() {
         $el = $(this);
         leftPos = $el.position().left;
         newWidth = $el.parent().width();
@@ -32,4 +34,5 @@ $(function() {
             width: $magicLine.data("origWidth")
         });    
     });
+
 });

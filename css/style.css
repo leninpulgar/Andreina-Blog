@@ -375,9 +375,20 @@ GENERALS
     right: 5px;*/
 }
 /*Lava lamp underline*/
-#lava-wrap {  
-    position: relative; }
-#magic-line { position: absolute; bottom: -2px; left: 0; width: 100px; height: 2px; background: #fe4902; }
+
+#menu { 
+	position: relative; 
+}
+.magic-line { 
+	position: absolute;
+	bottom: -1px; 
+	left: 0; 
+	width: 100px; 
+	height: 1px; 
+	background: #FFF;
+}
+.active a {  !important; 
+}
 
 /*STICKY*/
 .sticky {
