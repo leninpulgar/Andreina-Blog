@@ -18,6 +18,11 @@
     <header style="width:100%; z-index:999999;" class="sticky is-stuck" data-sticky data-sticky-on="small" data-options="marginTop:0;checkEvery:0;" data-anchor="siteContainer">
        <div class="title-bar">
         <div class="medium-6 column logo title-bar-left"></div>
+        <!--toggle burger-->
+        <div class="title-bar" data-responsive-toggle="menu" data-hide-for="medium">
+            <button style="width:2rem; height:2rem; margin-left:2rem; margin-top:1.7rem;" class="menu-icon" type="button" data-toggle></button>
+        </div>
+        <!--toggle burger end-->
         <nav class="medium-6 column title-bar-right">
             <ul id="menu" class="dropdown menu" data-dropdown-menu>
                 <li class="active"><a class="" href="">HOME</a></li>
@@ -38,6 +43,7 @@
     </header></div><!--Header end-->
     
     <section class="banner-home">
+     <h1>Me gusta escribir, por eso lo hago</h1>
     </section><!--Banner end-->
     
     <div class="container">
@@ -61,7 +67,13 @@
             <h4>RECENT</h4>
             <div class="separator"></div>
             <ul class="row medium-up-2" data-equalizer>
-                <li class="column" data-equalizer-watch><a href="#"><img src="img/grid/1.jpg" alt=""></a></li>
+
+               
+                <li class="column view view-tenth" data-equalizer-watch>
+                <a href="#">
+                <img src="img/grid/1.jpg" alt="">
+                </a>
+                </li>
                 <li class="column" data-equalizer-watch><a href="#"><img src="img/grid/2.jpg." alt=""></a></li>
                 <li class="column" data-equalizer-watch><a href="#"><img src="img/grid/3.jpg" alt=""></a></li>
                 <li class="column" data-equalizer-watch><a href="#"><img src="img/grid/5.jpg" alt=""></a></li>
@@ -102,8 +114,39 @@
                 </form>
             <div class="separator"></div>
         </div><!--Newsletter end-->
-        <div class="ads"></div><!--Ads end-->
-        <div class="archives"></div><!--Archives end-->
+        <div class="ads row">
+            <div class="top-separator"></div>
+            <!--Slider-->
+            
+            <div class="orbit" role="region" aria-label="Publicidad" data-orbit>
+				<ul class="orbit-container">
+					<button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
+					<button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
+					<li class="is-active orbit-slide">
+						<img class="orbit-image" src="images/logo-andrea-2015-03.png" alt="Ad">
+					</li>
+					<li class="orbit-slide">
+						<img class="orbit-image" src="images/logo-andrea-2015-03.png" alt="Ad">
+					</li>
+					<li class="orbit-slide">
+						<img class="orbit-image" src="images/logo-andrea-2015-03.png" alt="Ad">
+					</li>
+				</ul>
+			</div><!--Fin del slider-->
+            
+            <!--Slider end-->
+            <div class="top-separator"></div>
+        </div><!--Ads end-->
+        <div class="archives row">
+            <h4>ARCHIVES</h4>
+            <div class="top-separator"></div>
+                <div class="archive-container">
+                <select class="row collapse" name="archive" id="archive" placeholder="Select month...">
+                <option value="" disabled selected hidden>Select month...</option>
+                </select>
+                </div>
+            <div class="top-separator"></div>
+        </div><!--Archives end-->
         <div class="instagram"></div><!--Instagram end-->
         <div class="tweets"></div><!--Tweets end-->
     </aside><!--Aside end-->

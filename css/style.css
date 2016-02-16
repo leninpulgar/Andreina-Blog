@@ -12,6 +12,11 @@ html, body{
     padding: 0;
 }
 
+@font-face {
+    font-family: 'GINETTE';
+    src:url(../fonts/GINETTE.TTF);
+}
+
 /******
 HEADER
 ******/
@@ -20,6 +25,15 @@ header{
     background-color: #b8ddd6;
     font-size: 1rem;
     width: 100%;
+}
+
+.banner-home h1{
+    float:left;
+    color: #FFF;
+    font-family: GINETTE;
+    margin-top: 20%;
+    margin-left: 4rem;
+    font-size: 2.5rem;
 }
 
 .title-bar{
@@ -135,6 +149,8 @@ a.load-more-button{
     margin-bottom: 2.5rem;
 }
 
+
+
 /****
 ASIDE
 ****/
@@ -241,6 +257,51 @@ a.read-more-button:hover{
 
 .newsletter form button:hover{
     background-color: rgb(255,102,102);
+}
+
+/***
+ADS
+***/
+.orbit{
+    padding:1rem;
+}
+
+/*******
+ARCHIVES
+********/
+.archives{
+    padding-top: 1rem;
+}
+
+.archives select{
+    color: rgb(153,153,153);
+    font-family: 'Lato';
+    font-weight: 300;
+}
+
+.archives h4{
+    margin-left:1rem;
+}
+
+.archives h4:before{
+    content: '';
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+    background: url(../img/icons/icon_letter-06.svg) center no-repeat;
+    vertical-align: middle;
+}
+
+.archives select{
+    margin-top:1rem;
+    border-radius: 0;
+    background-color: rgba(1,1,1,0);
+    
+}
+
+.archive-container{
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 /******
