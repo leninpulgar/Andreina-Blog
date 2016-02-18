@@ -17,6 +17,13 @@ html, body{
     src:url(../fonts/GINETTE.TTF);
 }
 
+.container p{
+    color: #999999;
+    font-family: 'Lato';
+    
+    text-align: justify;
+}
+
 /******
 HEADER
 ******/
@@ -56,6 +63,10 @@ nav{
 ul.submenu.is-dropdown-submenu.first-sub.vertical{
     background-color:#b8ddd6;
     border:0;
+}
+
+.dropdown.menu .submenu{
+    min-width: 130px;
 }
 
 ul.submenu.is-dropdown-submenu.first-sub.vertical li:hover{
@@ -114,8 +125,20 @@ TRENDING
 .trending{
     color: #999999;
     font-family: 'Lato';
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
     
+}
+
+.trending p{
+    color: #000;
+    font-weight: 300;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.trending strong{
+    font-weight: 400;
 }
 
 .entry-title{
@@ -129,12 +152,59 @@ TRENDING
     height: 326px;
 }
 
+.work-category:before{
+    content: '';
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url(images/work-pencil.png) no-repeat center;;
+    vertical-align: middle;
+}
+
+.blog-stats{
+    margin-top:1rem;
+    text-align: right
+}
+
+.comments-n1:before {
+    content: '';
+    display:inline-block;
+    width: 1.5rem;
+    height: 1.2rem;
+    background: url(../img/icons/icon%20msn-05-04-05.svg) no-repeat center;
+    vertical-align: middle;
+}
+
+.likes-n1:before{
+    content: '';
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url(../img/icons/icon%20heart-04-04.svg) no-repeat center;
+    vertical-align: middle;
+}
+
+.trending .social-holder:before{
+    content: 'Like it? share!';
+    display: inline-block;
+}
+
+.trending .social-holder{
+    margin-left: .5rem;
+}
+
+
 /*****
 RECENT
 ******/
+
+.recent h4{ padding-top: .5rem;}
 .recent li{
     list-style-type: none;
     margin-bottom: 1rem;
+}
+
+.recent li{
 }
 
 a.load-more-button{
@@ -147,6 +217,25 @@ a.load-more-button{
     color:#FFF;
     font-weight: 300;
     margin-bottom: 2.5rem;
+    margin-left: 1rem;
+}
+
+.comments-n:before{
+    content: '';
+    display:inline-block;
+    width: 1.5rem;
+    height: 1.2rem;
+    background: url(../img/icons/icon%20msn-05.svg) no-repeat center;
+    vertical-align: middle;
+}
+
+.likes-n:before{
+    content: '';
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url(../img/icons/icon%20heart-04.svg) no-repeat center;
+    vertical-align: middle;
 }
 
 
@@ -158,6 +247,11 @@ ASIDE
 .about{
     margin-bottom: 1rem;
 }
+
+.about p{
+    padding-top: 1rem;
+}
+
 .about-photo{
     background: url(../img/foto-about-home.jpg) no-repeat 100%;
     -webkit-background-size: cover;
@@ -195,7 +289,11 @@ a.read-more-button:hover{
 
 .social-holder{
     display: inline-block;
-    margin-left: 2rem;
+    margin-left: 2.5rem;
+}
+
+.social-holder a{
+    margin-left: .5rem;
 }
 
 .snf{
@@ -304,6 +402,49 @@ ARCHIVES
     padding-right: 1rem;
 }
 
+/********
+INSTAGRAM
+*********/
+
+.instagram{
+    margin-top:.5rem;
+}
+
+.instagram h4{
+    margin-left: 1rem;
+}
+
+.instagram h4:before{
+    content: '';
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+    background: url(images/inst-gris.png) center no-repeat;
+    vertical-align: middle;
+}
+
+/******
+TWEETS
+******/
+
+.tweets h4{
+    margin-top:.5rem;
+    margin-left: 1rem;
+}
+
+.tweets h4:before{
+    content: '';
+    display: inline-block;
+    width: 1.9rem;
+    height: 1.9rem;
+    background: url(../img/icons/icon%20twittergris-08.svg) center no-repeat;
+    vertical-align: middle;
+}
+
+.tweet-content{
+    margin: 1rem;
+}
+
 /******
 FOOTER
 ******/
@@ -388,13 +529,6 @@ GENERALS
     font-weight: 300;
 }
 
-.container p{
-    color: #999999;
-    font-family: 'Lato';
-    
-    text-align: justify;
-}
-
 .separator{
     width: 100%;
     height: 3px;
@@ -448,7 +582,7 @@ GENERALS
 	height: 1px; 
 	background: #FFF;
 }
-.active a {  !important; 
+.active a {  !important 
 }
 
 /*STICKY*/
@@ -461,4 +595,136 @@ GENERALS
 .sticky.is-stuck {
   position: fixed;
   z-index: 5;
+}
+
+/* GRID BEGIN */
+
+.view {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.view .mask, .view .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view img {
+    position: relative
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    padding: 10px 10px 0 10px;
+    margin: 25% 0 0 0
+}
+.view p {
+    position: relative;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 0 20px 20px;
+    text-align: center;
+}
+
+/*TENTH*/
+.view-tenth img { 
+	transform: scaleY(1);
+	transition: all 0.7s ease-in-out;
+}
+.view-tenth .mask { 
+    background-color: rgba(248, 202, 204, .7); 
+    transition: all 0.5s linear;
+    opacity: 0;
+}	
+.view-tenth h2{
+    background: transparent;
+    transform: scale(0);
+    color: #FFF;
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+.view-tenth p {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+}
+
+
+/*HOVER*/
+.view-tenth:hover img { 
+	transform: scale(10);
+    opacity: 0;
+}
+.view-tenth:hover .mask { 
+	opacity: 1;
+}																			 
+.view-tenth:hover h2,
+.view-tenth:hover p,
+.view-tenth:hover a.info{ 
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* GRID END*/
+
+ul.row{
+    padding:0 1rem;
+}
+
+/*MEDIA QUERY FOOTER */
+@media screen and (max-width: 39.9375em) {
+
+.credits{
+    text-align: left;;
+    position: relative;
+}
+
+.redesf{
+    margin-left: -.4rem;
+}
+    
+}
+
+/*MEDIA QUERY HEADER*/
+@media screen and (max-width: 39.9375em){
+    nav ul li{
+        width: 100%;
+        float: left;
+        text-align: left
+    }
+    
+    nav ul li:hover{
+        background-color:rgb(248,202,204);
+    }
+    
+    ul.submenu.is-dropdown-submenu.first-sub.vertical{
+    background-color:#b8ddd6;
+    border:0;
+}
+
+.dropdown.menu .submenu{
+    position: absolute;
+    min-width: 100%;
+    float: left;
+    margin-left: 70px;
+}
+    
+    .dropdown.menu{
+        overflow: hidden;
+    }
+
+ul.submenu.is-dropdown-submenu.first-sub.vertical li:hover{
+    background-color:rgb(248,202,204);
+}
+
+    .magic-line{
+        height: 0;
+    }
+    
 }
