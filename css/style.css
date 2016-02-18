@@ -63,6 +63,7 @@ nav{
 ul.submenu.is-dropdown-submenu.first-sub.vertical{
     background-color:#b8ddd6;
     border:0;
+    text-align: left;
 }
 
 .dropdown.menu .submenu{
@@ -220,6 +221,11 @@ a.load-more-button{
     margin-left: 1rem;
 }
 
+a.load-more-button:hover{
+    transition: ease .3s;
+    background-color: #999999;
+}
+
 .comments-n:before{
     content: '';
     display:inline-block;
@@ -274,7 +280,7 @@ a.read-more-button{
 }
 
 a.read-more-button:hover{
-    background-color: rgb(255,102,102);
+    background-color: rgb(248,202,204);
 }
 /*SOCIAL NETWORKS*/
 
@@ -304,6 +310,10 @@ a.read-more-button:hover{
     padding-left: .3rem;
 }
 
+.snf:hover{
+    background-image: url(../img/icons/icon%20facegris-10.svg)
+}
+
 .sni{
     display: inline-block;
     width:30px;
@@ -312,12 +322,20 @@ a.read-more-button:hover{
     padding-left: .3rem;
 }
 
+.sni:hover{
+    background-image: url(../img/icons/icon%20instgris-11.svg)
+}
+
 .snt{
     display: inline-block;
     width:30px;
     height: 30px;
     background: url(../img/icons/icono%20twitter-03.svg) no-repeat center;
     padding-left: .3rem;
+}
+
+.snt:hover{
+    background-image: url(../img/icons/icon%20twittergris-12.svg)
 }
 
 
@@ -476,6 +494,10 @@ footer a{
     background: url(../img/icons/icon%20facegris-10.svg) no-repeat 100% center;
 }
 
+.fbf:hover{
+    background-image: url(../img/icons/icono%20facebook-01.svg)
+}
+
 .insf{
     display: block;
     width:30px;
@@ -483,11 +505,19 @@ footer a{
     background: url(../img/icons/icon%20instgris-11.svg) no-repeat 100% center;
 }
 
+.insf:hover{
+    background-image: url(../img/icons/icono%20instagram-02.svg)
+}
+
 .twf{
     display: block;
     width:30px;
     height: 30px;
     background: url(../img/icons/icon%20twittergris-12.svg) no-repeat 100% center;
+}
+
+.twf:hover{
+    background-image: url(../img/icons/icono%20twitter-03.svg);
 }
 
 .credits{
@@ -700,6 +730,7 @@ ul.row{
     }
     
     nav ul li:hover{
+        transition:  .3s;
         background-color:rgb(248,202,204);
     }
     
@@ -720,6 +751,7 @@ ul.row{
     }
 
 ul.submenu.is-dropdown-submenu.first-sub.vertical li:hover{
+    transition:  .3s;
     background-color:rgb(248,202,204);
 }
 
@@ -727,4 +759,16 @@ ul.submenu.is-dropdown-submenu.first-sub.vertical li:hover{
         height: 0;
     }
     
+    .logo{
+        margin:10px;
+        margin-right: 0;
+        width: 90%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 80%;
+    }
+    
+    .title-bar button{
+        position: absolute;
+    }
 }
